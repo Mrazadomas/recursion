@@ -3,12 +3,33 @@
  */
 package org.example;
 
+
+import java.util.ArrayList;
+
+import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
     @Test void appHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+        TriangularNumberCalculator calc = new TriangularNumberCalculator();
+        assertEquals(calc.value(3),6);
+        assertEquals(calc.value(5),15);
+
+        assertEquals(calc.add(4,4),20);
+        assertEquals(calc.add(5,4),25);
+
+        assertEquals(calc.multiply(4, 4), 100);
+        assertEquals(calc.multiply(2, 6), 63);
+
+        assertEquals(calc.divide(3, 2),2);
+        assertEquals(calc.divide(5, 2),5);
+
+        ArrayList<Integer> nums = new ArrayList<>(Arrays.asList(1, 2, 3, 4));
+        ArrayList<Integer> nums2 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8));
+        assertEquals(calc.sequence(4), nums);
+        assertEquals(calc.sequence(8), nums2);
+        
     }
 }

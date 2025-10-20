@@ -3,12 +3,22 @@
  */
 package org.example;
 
+import java.util.ArrayList;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        TriangularNumberCalculator calc = new TriangularNumberCalculator();
+        System.out.println(calc.value(3));
+        System.out.println(calc.add(4,4));
+        System.out.println(calc.multiply(4, 4));
+        System.out.println(calc.divide(3, 2));
+        ArrayList<Integer> nums = calc.sequence(4);
+        for (int i =0; i < nums.size(); i++) {
+            System.out.println(nums.get(i));
+        }
     }
 }
