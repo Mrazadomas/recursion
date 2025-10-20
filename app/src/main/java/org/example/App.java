@@ -12,8 +12,9 @@ public class App {
 
     public static void main(String[] args) {
         TriangularNumberCalculator calc = new TriangularNumberCalculator();
-        System.out.println(calc.value(3));
-        System.out.println(calc.add(4,4));
+        System.out.println(calc.value(3000));
+        System.out.println(calc.add(3000,35000));
+        System.out.println(calc.subtract(30000, 30000));
         System.out.println(calc.multiply(4, 4));
         System.out.println(calc.divide(3, 2));
         ArrayList<Integer> nums = calc.sequence(4);

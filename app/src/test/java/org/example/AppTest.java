@@ -20,6 +20,9 @@ class AppTest {
         assertEquals(calc.add(4,4),20);
         assertEquals(calc.add(5,4),25);
 
+        assertEquals(calc.subtract(2, 1), 2);
+        assertEquals(calc.subtract(4, 2), 7);
+
         assertEquals(calc.multiply(4, 4), 100);
         assertEquals(calc.multiply(2, 6), 63);
 
